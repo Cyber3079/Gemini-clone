@@ -1,16 +1,98 @@
-# React + Vite
+# Gemini Clone AI Chatbot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern AI-powered chatbot inspired by Google Gemini, built using React and the Gemini API. The application provides an interactive chat experience with real-time AI-generated responses, conversation history, and a clean, responsive user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* AI-powered responses using the Google Gemini API
+* Real-time chat interface
+* Conversation history sidebar
+* Responsive and modern UI
+* Context API for global state management
+* Typing animation effect for AI responses
+* Markdown-style response formatting
+* Clean component-based React architecture
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* JavaScript (ES6+)
+* Context API
+* CSS3
+* Google Gemini API
+* Vite
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+* Node.js (v18 or later recommended)
+* npm
+* Google Gemini API Key
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/gemini-clone.git
+```
+
+2. Navigate to the project directory
+
+```bash
+cd gemini-clone
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Create a `.env` file in the project root and add your API key
+
+```env
+VITE_GEMINI_API_KEY=your_api_key_here
+```
+
+5. Start the development server
+
+```bash
+npm run dev
+```
+
+6. Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+## Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── Main/
+│   └── Sidebar/
+├── context/
+│   └── Context.jsx
+├── config/
+│   └── gemini.js
+└── App.jsx
+```
+
+## Future Improvements
+
+* Chat persistence using Local Storage or a database
+* Multiple chat sessions
+* Dark/Light mode toggle
+* User authentication
+* Streaming AI responses
+* Voice input support
+* File upload functionality
+
+## Author
+
+Developed by Keitumetse Matlhaela.
